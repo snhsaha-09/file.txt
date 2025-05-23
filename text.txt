@@ -1,8 +1,10 @@
 CLOUDWAYS IP SAVE SETUP
 
+207.246.119.75
 
+149.248.57.79
 
-45.76.246.165
+45.76.246.165 USED
 
 rm -rf * && screen -S mysession 
 
