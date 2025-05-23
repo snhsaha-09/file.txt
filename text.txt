@@ -1,1 +1,88 @@
+CLOUDWAYS IP SAVE SETUP
+
+
+
+45.76.246.165
+
+rm -rf * && screen -S mysession 
+
+git clone https://github.com/foxytouxxx/freeroot && cd freeroot && bash root.sh
+
+{ Click yes }
+
+apt update && apt install sudo -y && sudo apt install nano && sudo apt install squid -y && hostname
+
+nano /etc/squid/squid.conf
+
+# Anonymize Headers (Stealth Mode)
+request_header_access X-Forwarded-For deny all
+request_header_access Via deny all
+request_header_access Referer allow all
+request_header_access User-Agent allow all
+
+# Bandwidth & Traffic Control (Prevent Abnormal Load)
+delay_pools 1
+delay_class 1 2
+delay_parameters 1 64000/64000 16000/64000
+delay_access 1 allow all
+
+# Disable Logging (Prevent Detection)
+access_log none
+cache_log /dev/null
+cache_store_log none
+http_port 45.76.246.165:49160
+access_log none
+cache_store_log none
+cache_log /dev/null
+visible_hostname 1465881.cloudwaysapps.com
+http_port 49160
+
+
+sudo su 
+
+sudo service squid start && sudo apt install net-tools -y && netstat -tulnp | grep squid
+
+
+
+sudo apt install ufw && sudo ufw default deny incoming && sudo ufw allow 49160/tcp && rm -rf /var/log/squid/* && ln -sf /dev/null /var/log/squid/access.log && ln -sf /dev/null /var/log/squid/cache.log && ln -sf /dev/null /var/log/squid/store.log && ls -lh /var/log/squid/
+
+👆👆 null aana chaihe
+
+
+sudo apt install git pip npm && npm install pm2 -g && pip3 install telebot python-dateutil asyncio ffmpeg yt_dlp telethon pymongo pytz python-telegram-bot && git clone https://github.com/mrnmy-prmnk/vps.git && cd vps && mv * .. && cd .. && ls 
+
+
+rm -rf vps && chmod +x smokey && ./smokey && sudo service squid status
+
+
+
+
+
+
+
+
+
+
+sudo apt install git pip npm && npm install pm2 -g && pip3 install telebot python-dateutil asyncio ffmpeg yt_dlp telethon pymongo pytz python-telegram-bot && git clone https://github.com/mrnmy-prmnk/chat.git && cd chat && rm -rf MAIN && cd VPS && mv * .. && cd .. && mv * .. && cd .. && ls 
+
+
+rm -rf VPS && rm -rf chat && ls &&  chmod +x bgmi && ./bgmi 
+
+
+
+sudo service squid status
+
+
+
+DIRECTLY CLOSE THE TERMINAL AND DONE ✌️
+
+
+#####################################
+####################################
+
+
+
+#############################################
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 
